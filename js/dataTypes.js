@@ -47,10 +47,58 @@ console.log(typeof(sym)==2)
 
 // refrence data types
 // [] array 
+// An array is a special variable, which can hold more than one value:
+
+
+
+let arr = new Array(1,2, 3, 4,5)
+
+console.log(arr);
+
+// 0 --> n-1
+
+
+// console.log(array)
 // functions 
+let car = () => {
+    let aarc_mobile_carList = ["volvo", "mazda", "McLane", "Prosche", "buggati"] 
+
+    for(let i=0; i<aarc_mobile_carList.length; i++){
+        console.log(`The car ${i+1} is ${aarc_mobile_carList[i]}`);
+    }
+
+    return aarc_mobile_carList;
+}
+
+car()
+
 // objects
 
 
+let cars = {
+    "car1" : "maaro-deekro", 
+    "car2" : "mazda", 
+    "car3" : "buggati", 
+    "car4" : "bmw", 
+    "car5" : "bablu-dablu", 
+    "car6" : "volvo" ,
+    "car7" : "nil", 
+    "car8" : "dhanno", 
+    "car9" : "mazda", 
+}
+
+console.log("sachin: ", cars.car1)
+console.log("Kajal: ", cars.car6)
+console.log("ajmat: ", cars.car4)
+console.log("business man")
+console.log("ajmat: ", cars.car2)
+console.log("ajmat", cars.car1)
 
 
-// console.log(add(2, 3))
+let obj = new Object();
+
+obj.firstName = "Mrinal";
+obj.age = 20
+
+console.log(obj.firstName, obj.age)
+
