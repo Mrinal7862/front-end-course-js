@@ -1,5 +1,5 @@
 // function_keyword function_Name(){
-    // instruction
+//     instruction
 // }
 
 // function palakPaneer(){
@@ -20,8 +20,19 @@
 // Functions are typically defined using the function keyword, followed by a name (optional for anonymous functions), parentheses () which may contain parameters, and curly braces {} enclosing the function's code block.
 
 // function Name(){
+//     //task gfdgfdg
 //     return "Mrinal";
 // }
+
+// let n = ""
+// console.log(n) //Lemon tea
+
+// function Drink(n){
+//     return n;
+// }
+
+// console.log(Drink("Lemon Tea"))
+// console.log(Drink("Black Tea"))
 
 // function Name2(){
 //     console.log("Mrinal")
@@ -65,16 +76,31 @@
 
 // Call by Value:
 // When a variable containing a primitive data type (e.g., number, string, boolean, null, undefined, symbol) is passed to a function, its value is copied into the function's local parameter.
+
+// function server(n, request, response){
+//     if(n>0){
+//         return request;
+//     }
+//     else if(n<0){
+//         return response;
+//     }
+// }
+
+
+// console.log(server(3, "request succeded", "Response given"))
+// console.log(server(-3, "request succeded", "Response given"))
+
+// call by refrence 
 // Any modifications made to this parameter inside the function do not affect the original variable outside the function, as they are working on separate copies. 
 
-// let num = 10;
+// let num = 11;
 
 // function increment(value) {
 //   value = value + 1; // Modifies the local copy
 //   console.log("Inside function:", value); // Output: Inside function: 11
 // }
 
-// increment(num);
+// increment(num); // increment(10)
 // console.log("Outside function:", num); // Output: Outside function: 10 (original remains unchanged)
 
 // function ajmat() {
@@ -93,21 +119,27 @@
 
 // }
 
+// let callKajal = function (){
+//     return "Sachin, Kajal, Ajmat, Shamshad sab  Idhar aao";
+// }
 
+// console.log(callKajal())
 
 // console.log(Name("Mrinal"))
 // console.log(greeting("shamshad"))
 
 // Arrow Function 
 
+// add two numbers 
+
 // General term
 // function add(m, n){
 //     return m + n; 
 // }
 
-// console.log(add(2,6))
+// // console.log(add(2,6))
 
-// //Anonymous Function 
+// // //Anonymous Function 
 // let plus = function(m, n){
 //     return m + n;
 // }
@@ -120,19 +152,31 @@
 
 // let jodo = (m, n) => m + n; 
 
+// let call = (x,y) => {
+//     return x + y
+// }
+
+// console.log(call(2, 5))
+
 // console.log(jodo(4,5))
+
 
 
 // iife (imideatiely Invoked function)
 
-// let func = (function (){
-//     let sqr = 8*8
-//     return sqr
+// An IIFE (Immediately Invoked Function Expression) is a JavaScript function that is executed immediately after it is defined. It's a common pattern used to create a private scope for variables, preventing them from polluting the global scope
+
+// (function(){
+//     return 9;
 // })();
 
-// console.log(func)
+// (()=>{console.log("Hello ji kaisan baa");})();
+ 
+// let greet1 = () =>{console.log("Hello everyone")}
+// let greet2 = ()=>{console.log("Hello ji")}
 
-// let phonk = ((m,n) => m + n)(2,3)
+// greet1() 
+// greet2()
 
-// console.log(phonk)
-
+// console.log("hello ji");
+// console.log("namaste ji");
